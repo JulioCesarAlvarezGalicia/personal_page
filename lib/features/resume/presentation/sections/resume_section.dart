@@ -8,18 +8,11 @@ class ResumeSection extends StatelessWidget {
 
   final String cvUrl =
       "https://drive.google.com/file/d/1Mc46DCTBBKhwK4u5nfc8lI7CjeWPpSwu/view?usp=sharing";
-  final String cedulaUrl =
-      "https://drive.google.com/file/d/1rO5SuqjHVepbJ14mm_E9W2mBjfqFnUjV/view?usp=sharing";
   final String tituloUrl =
       "https://drive.google.com/file/d/1BbTfEOU8cxl0AqO5499908APDgNaK7NC/view?usp=sharing";
 
   Future<void> downloadCV() async {
     final uri = Uri.parse(cvUrl);
-    await launchUrl(uri, mode: LaunchMode.externalApplication);
-  }
-
-  Future<void> openCedula() async {
-    final uri = Uri.parse(cedulaUrl);
     await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
@@ -69,13 +62,6 @@ class ResumeSection extends StatelessWidget {
                     label: "CV",
                     icon: Icons.download,
                     onTap: downloadCV,
-                    isFullWidth: isMobile,
-                    maxWidth: constraints.maxWidth,
-                  ),
-                  _buildButton(
-                    label: "Professional License",
-                    icon: Icons.badge,
-                    onTap: openCedula,
                     isFullWidth: isMobile,
                     maxWidth: constraints.maxWidth,
                   ),
