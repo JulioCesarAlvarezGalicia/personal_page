@@ -7,7 +7,7 @@ class ResumeSection extends StatelessWidget {
   const ResumeSection({super.key});
 
   final String cvUrl =
-      "https://drive.google.com/file/d/1Mc46DCTBBKhwK4u5nfc8lI7CjeWPpSwu/view?usp=sharing";
+      "https://drive.google.com/file/d/18PaouARX0Wp7imfHn2nTtIOehoTsBjDd/view?usp=sharing";
   final String tituloUrl =
       "https://drive.google.com/file/d/1BbTfEOU8cxl0AqO5499908APDgNaK7NC/view?usp=sharing";
 
